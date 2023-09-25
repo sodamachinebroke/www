@@ -1,0 +1,50 @@
+body {
+    table-layout: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background-color: #7dd1ff;
+    color: black;
+}
+
+#title_image{
+    max-height: 200px;
+}
+table{
+    width: 65%;
+    height:max-content;
+}
+
+.content{
+    max-height: 30px;
+    font-weight: bold;
+}
+
+td{
+    text-align: center;
+}
+.unique{
+    text-align: right !important;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.special_numbering{
+    list-style-type: none;
+    counter-reset: custom-counter;
+}
+
+.special_numbering li::before{
+    content: "[" counter(custom-counter) "]";
+    counter-increment: custom-counter;
+    margin-right: 5px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#unmarked{
+    padding-left: 0;
+}
